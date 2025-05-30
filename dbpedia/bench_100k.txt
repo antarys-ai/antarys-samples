@@ -1,0 +1,24 @@
+WRITE PERFORMANCE (batch size 1000)
+- Total points inserted: 100000
+- Successful batches: 100
+- Average batch time: 0.4957s
+- Throughput: 2017.54 vectors/sec
+- Percentiles: P50=0.4910s, P90=0.5208s, P99=0.5703s
+
+READ PERFORMANCE (100 queries)
+- Successful queries: 100
+- Average query time: 0.0014s
+- Throughput: 692.61 queries/sec
+- Percentiles: P50=0.0013s, P90=0.0014s, P99=0.0069s
+
+READ PERFORMANCE (1000 queries)
+- Successful queries: 1000
+- Average query time: 0.0025s
+- Throughput: 395.38 queries/sec
+- Percentiles: P50=0.0000s, P90=0.0000s, P99=0.0001s
+
+
+SUMMARY
+======================================================================
+Best write performance: 2017.54 vectors/sec (batch size 1000)
+Best read performance: 692.61 queries/sec (100 queries)

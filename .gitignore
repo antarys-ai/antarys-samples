@@ -1,2 +1,4 @@
 ./.venv
 ./image_simiarity/antarys_*
+image_similarity/.DS_Store
+.idea/vcs.xml
