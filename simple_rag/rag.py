@@ -59,11 +59,12 @@ async def main():
     rag = SimpleRAG()
     await rag.init()
 
-    await rag.add("adib",
-                  "Adib Mohsin is a student currently studying in computer science from BRACU (BRAC University)")
-    await rag.add("foisal",
-                  "Fahim Foisal is a student currently studying in computer science from BRACU (BRAC University)")
-    await rag.query("who is Adib Mohsin and Fahim Foisal?", verbose=True)
+    await rag.add("AHNSW",
+                  "Unlike tradtional sequential HNSW, we are using a different asynchronous approach to HNSW and eliminating thread locks with the help of architectural fine tuning. We will soon release more technical details on the Async HNSW algorithmic approach.")
+    await rag.add("Antarys",
+                  "Antarys is a multi-modal vector database and it uses the AHNSW algorithm to enhance it's performance to perform semantic searching based on similarity")
+
+    await rag.query("what is Antarys?", verbose=True)
 
 
 asyncio.run(main())
